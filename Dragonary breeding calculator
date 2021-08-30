@@ -1,0 +1,54 @@
+    import java.util.Scanner;
+    class Main {
+        public static void main(String[] args) {
+
+            Scanner dragonary = new Scanner(System.in);
+            double bothNumOneStats, bothSNumTwoStats;
+            System.out.print("Enter the first stats of parent one: ");
+            bothNumOneStats = dragonary.nextInt();
+            System.out.print("Enter the first stats of parent two: ");
+            bothSNumTwoStats = dragonary.nextInt ();
+
+            double percentage = 0.20;
+            double PfirstStats = bothNumOneStats+bothSNumTwoStats;
+            double PfirstDivStats = PfirstStats / 2;
+            double PfirstStatsPercentage = PfirstDivStats*percentage;
+            double finalStats = PfirstDivStats+PfirstStatsPercentage;
+            System.out.print("Chance first stats of baby dragon :"+finalStats+"\n"); 
+
+            double secondNumOneStats, secondNumTwoStats;
+            System.out.print("\n"+"Enter the second stats of parent one: ");
+            secondNumOneStats = dragonary.nextInt();
+            System.out.print("Enter the second stats of parent two: ");
+            secondNumTwoStats = dragonary.nextInt ();
+
+            double SPfirstStats = secondNumOneStats+secondNumTwoStats;
+            double SPfirstDivStats = SPfirstStats / 2;
+            double SPfirstStatsPercentage = SPfirstDivStats*percentage;
+            double finalSecondPStats = SPfirstDivStats+SPfirstStatsPercentage;
+            System.out.print("Chance second stats of baby dragon :"+finalSecondPStats+"\n");
+
+            double ThirdNumOneStats, ThirdNumTwoStats;
+            System.out.print("\n"+"Enter the second stats of parent one: ");
+            ThirdNumOneStats = dragonary.nextInt();
+            System.out.print("Enter the second stats of parent two: "); 
+            ThirdNumTwoStats = dragonary.nextInt ();
+
+            double TPfirstStats = ThirdNumOneStats+ThirdNumTwoStats;
+            double TPfirstDivStats = TPfirstStats / 2;
+            double TPfirstStatsPercentage = TPfirstDivStats*percentage;
+            double finalThirdPStats = TPfirstDivStats+TPfirstStatsPercentage;
+            System.out.print("Chance third stats of baby dragon :"+finalThirdPStats+"\n");
+
+            double finals = finalStats + finalSecondPStats + finalThirdPStats;
+            if(finals >= 89.5){
+                System.out.print("\nDragon is rare! with a stats of "+finals+"%");
+            }else if(finals <= 89.4 || finals >= 50.4){
+                System.out.print("\nDragon is uncommon! with a stats of "+finals+"%");
+            }else{
+                System.out.print("\nDragon is common! with a stats of "+finals+"%");
+            }
+            //System.out.print("\n"+"Overall stats of baby dragon :"+finals+"\n");
+
+        }
+    }

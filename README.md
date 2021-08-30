@@ -1,3 +1,5 @@
+**HOW TO USE!!!**
+
 **First open "https://www.online-java.com/" and paste the code (https://raw.githubusercontent.com/herculeszxc/Java-things/main/Dragonary%20breeding%20calculator) and click run** 
 
 **Second : follow this guide for compiler inputs** 
